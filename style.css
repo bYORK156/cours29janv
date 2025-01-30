@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    font-family: funnel display;
+}
+
+nav {
+    display: flex; /* Active Flexbox */
+    justify-content: space-between; /* Espace entre le logo et les liens */
+    align-items: center; /* Centre verticalement */
+    padding: 10px 20px;
+    background-color: #dddde7;
+    color: white;
+    height: 7rem;
+
+}
+
+
+.logo img{
+    font-size: 24px;
+    font-weight: bold;
+    width: 150px ;
+}
+.logo:hover{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+.onglets {
+    display: flex;
+    list-style: none; 
+    flex-wrap: wrap;
+    gap: 20px; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+
+.onglets li a {
+    color: rgb(21, 11, 110);
+    text-decoration: none;
+}
+
+.onglets li a:hover{
+    background-color: rgb(255, 255, 255);
+    border-radius: none;
+}
+
+
+.backimage{
+    margin-top: 5px;
+    background-position: top;
+    background-image: url(https://www.portraitprofessionnel.fr/wp-content/uploads/2021/03/Photographe-professionnel-avocat.jpg);
+    height: 29rem;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+    font-size: bolder;
+    border-radius: 10px;
+   
+    }
+.backimage button{
+    border: solid rgb(243, 243, 243);
+    border-width: 1rem;
+    border-radius: 10px;
+
+}
+.cards{
+    margin: 20px;
+    padding: 30px ;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+
+}
+
+.hero  {
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: space-around;
+        height: 25rem;
+        width: 18rem;
+        background-color: rgb(197, 176, 167);
+        border-radius: 20px;
+    }
+
+.hero ul{
+    flex-direction: column;
+    text-decoration:underline;
+}
+
+.hero img{
+    width: 250px;
+}
+
+.hero1{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    height: 25rem;
+    width: 18rem;
+    background-color: rgb(91, 53, 134);
+    border-radius: 20px;
+}
+
+.hero1 ul{
+    flex-direction: column;
+    text-decoration:underline;
+}
+
+.hero1 img{
+    width: 250px;
+}
+
+
+.hero2{
+    display: row;
+    align-items:center;
+    justify-content: space-between;
+    background-color: rgb(226, 210, 136);
+    width: 18rem;
+    height: 25rem;
+    border-radius: 20px;
+}
+.hero2 ul{
+    flex-direction: column;
+    text-decoration:underline;
+}
+
+.hero2 img{
+
+    width: 200px;
+    align-items: center;
+
+}
+
+footer{
+    padding: 10px 20px;
+    background-color: rgb(22, 53, 58);
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    color: rgb(217, 219, 223);
+    margin-inline: 20px;
+    border-radius: 10px;
+
+}
+
+.footer {
+display: flex;
+justify-content: center;
+gap: 400px;
+border: 1px solid white;
+width: 100%;
+
+}
+
+.footer li{
+    list-style: none;
+    text-decoration: underline;
+    margin-bottom: 3px;
+    
+}
+.footer li a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    list-style: none;
+    font-size: larger;
+}
+
+.footer p{
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    
+    header, main, footer {
+        padding: 10px;
+        text-align: left;
+    }
+
+    
+        .content {
+            flex-direction: column;
+        }
+        .backimage{
+            background-position: center;
+        }
+    
+        .content img {
+            width: 100%;
+        }
+    }
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    header, main, footer {
+        padding: 15px;
+    }
+
+}
